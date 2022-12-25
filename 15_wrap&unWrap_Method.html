@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wrap & unwrap method</title>
+</head>
+<style type="text/CSS">
+    .box{
+        height: 100px;
+        width: 100px;
+        background-color: pink;
+        float: left;
+    }
+    .box1{
+        padding: 20px;
+        background-color: green;
+        float: left;
+    }
+</style>
+<body>
+    <div class="box"></div><br><br><br><br><br><br><br>
+    <button id="w">Wrap</button>
+    <button id="uW">unWrap</button>
+    <script src="cdn/jquery-3.6.1.js"></script>
+    <script src="cdn/jquery-3.6.1.min.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // wrap()
+            $('#w').click(function(){
+                $('.box').wrap("<div class='box1'></div>");
+            })
+            //unwrap()
+            $('#uW').click(function(){
+                $('.box').unwrap();
+            })
+        })
+    </script>
+</body>
+</html>

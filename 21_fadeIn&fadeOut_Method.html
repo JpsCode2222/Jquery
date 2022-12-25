@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FadeIn & FadeOut Method</title>
+    <style type="text/CSS">
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <button id="fadein1">FadeIn</button>
+    <button id="fadeout1">FadeOut</button>
+    <button id="fadetoggle1">FadeToggle</button>
+    <button id="fadeto1">FadeTo</button>
+
+    <script src="cdn/jquery-3.6.1.js"></script>
+    <script src="cdn/jquery-3.6.1.min.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.min.js"></script>
+
+    <!-- Ajax CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#fadein1').click(function(){
+                // fadeIn()
+                $('.box').fadeIn(3000);
+            })
+            $('#fadeout1').click(function(){
+                // fadeOut()
+                $('.box').fadeOut(3000);
+            })
+            $('#fadetoggle1').click(function(){
+                // fadeIn()
+                $('.box').fadeToggle(3000);
+            })
+            $('#fadeto1').click(function(){
+                // fadeIn()
+                $('.box').fadeTo(10000,0.5);
+            })
+        })
+
+        // Try
+        // slide
+    </script>
+</body>
+</html>

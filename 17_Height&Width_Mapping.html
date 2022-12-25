@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height & Width Mapping</title>
+</head>
+<style type="text/CSS">
+    .box{
+        height: 300px;
+        width: 300px;
+        background-color: red;
+        padding: 100px;
+        border: 20px solid black;
+        margin: 50px;
+    }
+</style>
+<body>
+    <div class="box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem veritatis cum ea iure et illum nihil reiciendis laudantium ex, nostrum deleniti quis ut vero magnam repellat adipisci recusandae nemo!</p>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //  width()
+            var a = $('.box').width();
+            console.log(a);
+             //  width()
+             var a = $('.box').innerWidth();
+            console.log(a);
+             //  width()
+             var a = $('.box').outerWidth();
+            console.log(a);
+             //  width()
+             var a = $('.box').outerWidth(true);
+            console.log(a);
+
+             //  Height()
+             var a = $('.box').height();
+            console.log(a);
+             //  Height()
+             var a = $('.box').innerHeight();
+            console.log(a);
+             //  Height()
+             var a = $('.box').outerHeight();
+            console.log(a);
+             //  Height()
+             var a = $('.box').outerHeight(true);
+            console.log(a);
+        })
+    </script>
+</body>
+</html>

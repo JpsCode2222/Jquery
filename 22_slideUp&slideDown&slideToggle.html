@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Method</title>
+    <style type="text/CSS">
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <button id="u">Slide UP</button>
+    <button id="d">Slide DOWN</button>
+    <button id="t">Slide TOGGLE</button>
+    <!-- Jquery cdn -->
+    <script src="../cdn/jquery-3.6.1.js"></script>
+    <script src="../cdn/jquery-3.6.1.min.js"></script>
+    <script src="../cdn/jquery-3.6.1.slim.js"></script>
+    <script src="../cdn/jquery-3.6.1.slim.min.js"></script>
+    <!-- Ajax CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#u').click(function () {
+                $('.box').slideUp();
+            })
+            $('#d').click(function () {
+                $('.box').slideDown();
+            })
+            $('#t').click(function () {
+                $('.box').slideToggle();
+            })
+        })
+    </script>
+</body>
+
+</html>

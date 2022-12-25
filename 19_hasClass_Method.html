@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Has Class Method</title>
+</head>
+<body>
+    <style type="text/CSS">
+        .box{
+            height: 200px;
+            width: 200px;
+            float: left;
+            background-color: green;
+        }
+    </style>
+    <div class="box data target info"></div>
+
+    <!-- JQuery CDN -->
+    <script src="cdn/jquery-3.6.1.js"></script>
+    <script src="cdn/jquery-3.6.1.min.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.box').click(function(){
+                // hasClass()
+                alert($(this).hasClass('data'));
+            })
+        })
+    </script>
+</body>
+</html>

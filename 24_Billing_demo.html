@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Demo</title>
+</head>
+<body>
+    <input type="text" id="pn" placeholder="Product Name">
+    <input type="text" id="pr" placeholder="Product Rate">
+    <input type="text" id="pq" placeholder="Product Quantity">
+    <input type="text" id="pt" placeholder="Product Total" readonly>
+    <button id="add">Add</button>
+
+    <table border="1" style="margin-top: 30px;" width="100%">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Rate</th>
+                <th>Product Quantity</th>
+                <th>Product Total</th>
+            </tr>
+        </thead>
+        <tbody id="tdata">
+
+        </tbody>
+    </table>
+
+        <!-- Jquery cdn -->
+        <script src="../cdn/jquery-3.6.1.js"></script>
+        <script src="../cdn/jquery-3.6.1.min.js"></script>
+        <script src="../cdn/jquery-3.6.1.slim.js"></script>
+        <script src="../cdn/jquery-3.6.1.slim.min.js"></script>
+        <!-- Ajax CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#pn,#pr,#pq,#pt').keyup(function(){
+                    var a = $('#pn').val();
+                    var b = $('#pr').val();
+                    var c = $('#pq').val();
+                    var t=Number(b)*Number(c);
+                    $('#pt').val(t);
+                })
+                $('#add').click(function(){
+                    var a = $('#pn').val();
+                    var b = $('#pr').val();
+                    var c = $('#pq').val();
+                    var d = $('#pt').val();
+                    var da = "<tr><td>"+a+"</td><td>"+b+"</td><td>"+c+"</td><td>"+d+"</td></tr>";
+                    $('#tdata').append(da);
+                })
+            })
+
+        </script>
+</body>
+</html>

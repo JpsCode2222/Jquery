@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReplaceWith & ReplaceAll Method</title>
+</head>
+<body>
+    <div class="box">
+        <p>Hello HTML</p>
+        <p>Hello js</p>
+        <p>Hello jquery</p>
+    </div>
+    <button id="rWith">ReplaceWith()</button>
+    <button id="rAll">ReplaceAll()</button>
+    <script src="cdn/jquery-3.6.1.js"></script>
+    <script src="cdn/jquery-3.6.1.min.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.min.js"></script>
+
+    <script type="text/javascript">
+        //  replaceWith()  --- selector - metho() - data
+        $(document).ready(function(){
+            $('#rWith').click(function(){
+                $('.box p:first').replaceWith('<h1>Hello CSS</h1>');
+            })
+        //  replaceAll()  --- data - meth() - selector
+        $('#rAll').click(function(){
+            $('<h2>Replace All</h2>').replaceAll('.box p:last');
+        })
+        })
+
+        
+    </script>
+</body>
+</html>

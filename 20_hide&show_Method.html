@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide & Show</title>
+    <style type="text/CSS">
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <button id="hide1">Hide</button>
+    <button id="show1">Show</button>
+    <button id="toggle1">Toggle</button>
+
+    <!-- JQuery CDN -->
+    <script src="cdn/jquery-3.6.1.js"></script>
+    <script src="cdn/jquery-3.6.1.min.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.min.js"></script>
+
+    
+    <!-- Ajax CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#hide1').click(function(){
+                // hide()
+                $('.box').hide(10000);
+            })
+            $('#show1').click(function(){
+                // show()
+                $('.box').show(10000);
+            })
+            $('#toggle1').click(function(){
+                $('.box').toggle();
+            })
+        })
+    </script>
+</body>
+</html>

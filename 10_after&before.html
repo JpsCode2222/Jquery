@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After & Before Method</title>
+</head>
+<body>
+    <script src="cdn/jquery-3.6.1.js"></script>
+    <script src="cdn/jquery-3.6.1.min.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.min.js"></script>
+
+    <div id="data">
+        <p>Hello JP</p>
+    </div>
+    <button id="aft">After</button>
+    <button id="bfr">Before</button>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // after()
+            $('#aft').click(function(){
+                $('#data').after('<p>Welcome JP</p>')
+            })
+            // before()
+            $('#bfr').click(function(){
+                $('#data').before('<p>Welcome JP</p>')
+            })
+        })
+    </script>
+</body>
+</html>

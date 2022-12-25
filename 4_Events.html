@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body id="body"style="height:1000px; width:2000px">
+    <script src="cdn/jquery-3.6.1.js"></script>
+    <script src="cdn/jquery-3.6.1.min.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.min.js"></script>
+
+    <style type="text/css">
+        .box{
+            height: 200px;
+            width: 50%;
+            background-color: red;
+            float: left;
+        }
+    </style>
+    <div id="body"></div>
+
+    <!-- Mouse Events -->
+    <!-- <script type="text/javascript">
+        $(document).ready(function(){
+            // click()
+            $('.box').click(function(){
+                $('.box').css('backgroundColor','green');
+            })
+            // dblclick
+            $('.box').dblclick(function(){
+                $('.box').css('backgroundColor','yellow');
+            })
+            // oncontextmenu
+            $('.box').contextmenu(function(){
+                $('.box').css('backgroundColor','orange');
+            })
+            // onmouseover
+            $('.box').mouseover(function(){
+                $('.box').css('backgroundColor','pink')
+            })
+             // onmouseout
+             $('.box').mouseout(function(){
+                $('.box').css('backgroundColor','purple')
+            })
+        })
+    </script> -->
+
+
+    <!-- KeyBoard Events -->
+    <!-- <script type="text/javascript">
+        $(document).ready(function(){
+            // Keypress
+            $('#body').keypress(function(){
+            $('this').css('background','black');
+            });
+            // Keydown
+            $('#body').keydown(function(){
+            $('this').css('background','brown');
+            });
+            // Keyup
+            $('#body').keyup(function(){
+            $('this').css('background','lime');
+            });
+        });
+    </script> -->
+
+    <!-- Form Events -->
+     <!-- <form action="#" id="da" >
+        <input type="text" id="name" validate><br>
+        <input type="text" id="email"><br>
+        <input type="text" id="phone"><br>
+        <select id="ch">
+            <option>Choose</option>
+            <option>Area</option>
+            <option>Area</option>
+            <option>Area</option>
+            <option>Area</option>
+        </select>
+        <button>Submit</button>
+     </form>
+
+     <script type="text/javascript">
+        $(document).ready(function(){
+            // focus
+            $('#name,#email,#phone').focus(function(){
+                $('this').css('background','yellow');
+            })
+            // blur
+              $('#name,#email,#phone').blur(function(){
+                $('this').css('background','green');
+            })
+            // select
+              $('#name,#email,#phone').select(function(){
+                $('this').css('background','pink');
+            })
+            // change
+              $('#ch').change(function(){
+                $('this').css('background','lime');
+            })
+             // submit
+             $('#da').submit(function(){
+                alert('Submit')
+            })
+        })
+     </script> -->
+
+
+     <!-- Window Events -->
+
+     <script type="text/javascript">
+        $(document).ready(function(){
+            // Resize
+            $(window).resize(function(){
+                alert("Resize");
+            })
+            // Scroll
+            $(window).scroll(function(){
+                alert("Scrolled");
+            })
+        })
+     </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET & SET</title>
+</head>
+<body>
+    <script src="cdn/jquery-3.6.1.js"></script>
+    <script src="cdn/jquery-3.6.1.min.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.min.js"></script>
+    <input type="text" name="" value="JP" id="inp">
+    <div class="box">
+        <p>Name : JP</p>
+        <p>Mobile : 56465465465</p>
+    </div>
+    <button id="html">HTML</button>
+    <button id="text">Text</button>
+    <div class="demo data1" id="demo"></div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // GET  --- val()
+            var a = $('#inp').val();
+            console.log(a);
+
+            // SET
+            $('#inp').val('Hello JP');
+
+            // html()   --- return with Tag
+            $('#html').click(function(){
+                // get
+                var a = $('.box').html();
+                console.log(a);
+                // set
+                $('.box').html('<h1>Name : JAYAD PATHAN</h1>');
+            })
+            
+            // Text() ---- return only text
+            $('#text').click(function(){
+                // get
+                var b = $('.box').text();
+                console.log(b);
+                // set
+                $('.box p:first').text('Name : JAYAD PATHAN');
+            })
+
+            // att() --- attribute return
+            //get
+            var c = $('#demo').attr('class');
+            console.log(a);
+            // set
+            $('#demo').attr('class','div')
+        })
+    </script>
+
+</body>
+</html>

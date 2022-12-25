@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+</head>
+<body>
+    <h1>Hello Jp Welcome to jquery</h1>
+    <h1>Hello Jp Welcome to jquery</h1>
+    <h1>Hello Jp Welcome to jquery</h1>
+    <h1>Hello Jp Welcome to jquery</h1>
+    <h2 class="first1">Hello Jp</h2>
+    <h2 id="mid">Hello Jp</h2>
+    <h2 class="first1">Hello Jp</h2>
+    <script src="cdn/jquery-3.6.1.js"></script>
+    <script src="cdn/jquery-3.6.1.min.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.min.js"></script>
+    <script type="text/javascript">
+        // 1 Tag Selector
+        // $().()
+        // tag
+        $('h1').css('color','pink');
+        // :first
+        $('h1:first').css('color','green');
+        // :last
+        $('h1:last').css('color','green');
+        $('h1').click(function fun(){
+            $(this).css('color','green')
+        })
+
+        // 2 Class Selector
+        $('.first1').css('color','red');
+
+        // 3 Id Selector
+        $('#mid').css('color','blue');
+
+        // 4 Mix Selector
+        $('h1,.data,#mid').css('color','brown');
+
+        // 5 select All elements
+        $("*");
+
+        // 6 select Current html element
+        $(this);
+
+        // 7 select first li of ul
+        $('ul li:first');
+
+        // 8 select all elements with href att.
+        $('[href]');
+
+        // 9 select all anchor eleents with a target att val not equal to '_blank'
+        $("a[target='_blank']")
+
+        // 10 select all button elements or inpute type button
+        $(':button');
+
+        // 11 select all even tr elements
+        $('tr:even');
+
+        // 12 select all odd tr elements
+        $('tr:odd');
+
+        // 13 select all input type is radio
+        $(':radio');
+
+         // 14 select all input type is password
+         $(':password');
+
+        // 15 select all input type is checkbox
+        $(':checkbox');
+
+        // 16 Select all enabled input elements
+        $(":enabled")	
+
+        // 17 select all disabled input elements
+    	$(":disabled")	
+
+        // 18 select all selected input elements
+        $(":selected")	
+
+        // 19 select all checked input elements
+        $(":checked")	
+
+
+    </script>
+</body>
+</html>

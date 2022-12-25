@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Methods</title>
+</head>
+<body>
+    <script src="cdn/jquery-3.6.1.js"></script>
+    <script src="cdn/jquery-3.6.1.min.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.min.js"></script>
+
+    <div id="data"></div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // Single Line
+            $('#data').css('height','100px');
+            $('#data').css('width','100px');
+            $('#data').css('background','red');
+            // Multiline -- Object type {key:value,key:value}
+            $('#data').css({
+                'height':'200px',
+                'width':'200px',
+                'background':'green',
+            })
+        })
+    </script>
+</body>
+</html>

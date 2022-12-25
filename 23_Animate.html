@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate Method</title>
+    <style type="text/CSS">
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: yellow;
+        }
+        .ball{
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            border-radius: 50%;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="ball"></div>
+    </div>
+    <button id="s">Start</button>
+    <!-- Jquery cdn -->
+    <script src="../cdn/jquery-3.6.1.js"></script>
+    <script src="../cdn/jquery-3.6.1.min.js"></script>
+    <script src="../cdn/jquery-3.6.1.slim.js"></script>
+    <script src="../cdn/jquery-3.6.1.slim.min.js"></script>
+    <!-- Ajax CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#s').click(function(){
+                $('.ball').animate({'top':'100px','left':'100px',},2000);
+                $('.ball').animate({'top':'0px','left':'100px'},2000);
+                $('.ball').animate({'top':'200px','left':'200px'},2000);
+            })
+        })
+    </script>
+</body>
+</html>

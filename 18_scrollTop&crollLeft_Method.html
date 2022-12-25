@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Top Method</title>
+</head>
+<body style="height: 2000px; width: 2000px;background-image: linear-gradient(red,blue,green);">
+    <button id="top1" style="background-color: aqua;height: 50px; width: 50px;z-index:999;position: fixed;bottom: 0px; left: 0px;">🔝</button>
+    <button id="left1" style="background-color: aqua;height: 50px; width: 50px;z-index:999;position: fixed;bottom: 0px; left: 100px;">⬅️</button>
+    
+    <!-- JQuery CDN -->
+    <script src="cdn/jquery-3.6.1.js"></script>
+    <script src="cdn/jquery-3.6.1.min.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.js"></script>
+    <script src="cdn/jquery-3.6.1.slim.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#top1').click(function(){
+                //crollTop()
+                $(window).scrollTop(0);
+            })
+            $('#left1').click(function(){
+                //crollTop()
+                $(window).scrollLeft(0);
+            })
+        })
+    </script>
+</body>
+</html>
